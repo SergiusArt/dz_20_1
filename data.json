@@ -1,0 +1,138 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "деревянный",
+      "description": "полностью деревянный стул",
+      "image": "",
+      "category": 1,
+      "price": "500.00",
+      "date_created": "2023-09-12T19:45:36.678Z",
+      "date_modified": "2023-09-12T19:45:36.678Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "пластиковый",
+      "description": "для уличных кафе",
+      "image": "",
+      "category": 2,
+      "price": "500.00",
+      "date_created": "2023-09-12T19:46:11.495Z",
+      "date_modified": "2023-09-12T19:46:11.495Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "haier",
+      "description": "с системой авторазморозки",
+      "image": "",
+      "category": 3,
+      "price": "30000.00",
+      "date_created": "2023-09-12T19:46:54.388Z",
+      "date_modified": "2023-09-12T19:46:54.388Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "samsung",
+      "description": "высокая экономия воды и электроэнергии",
+      "image": "",
+      "category": 4,
+      "price": "35000.00",
+      "date_created": "2023-09-12T19:47:34.448Z",
+      "date_modified": "2023-09-12T19:47:34.448Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "мягкий",
+      "description": "удобный мягкий стул",
+      "image": "",
+      "category": 1,
+      "price": "1500.00",
+      "date_created": "2023-09-12T19:47:34.448Z",
+      "date_modified": "2023-09-12T19:47:34.448Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "дубовый",
+      "description": "для больших компаний",
+      "image": "",
+      "category": 2,
+      "price": "10500.00",
+      "date_created": "2023-09-12T19:47:34.448Z",
+      "date_modified": "2023-09-12T19:47:34.448Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "bosh",
+      "description": "двухкамерный",
+      "image": "",
+      "category": 3,
+      "price": "60000.00",
+      "date_created": "2023-09-12T19:47:34.448Z",
+      "date_modified": "2023-09-12T19:47:34.448Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "haier",
+      "description": "маленькая компактная посудомойка",
+      "image": "",
+      "category": 4,
+      "price": "35000.00",
+      "date_created": "2023-09-12T19:47:34.448Z",
+      "date_modified": "2023-09-12T19:47:34.448Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "стул",
+      "description": "для столовой и гостинной"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "стол",
+      "description": "для столовой и гостинной"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "холодильник",
+      "description": "с морозильной камерой"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "посудомойка",
+      "description": "заменяет ручную мойку грязной посуды"
+    }
+  }
+]
