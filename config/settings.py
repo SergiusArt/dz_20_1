@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+from src.config import config
+
+# Данные для загрузки параметров для Базы данных берутся из файла database.ini
+params = config()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_*3$3&4i3dlict(&gk%q1w+b%yju9b3t-^6&x18z$q+6*qac3b'
+SECRET_KEY = os.environ.get('Django_DZ_20_1')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,8 +80,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': params['engine'],
+        'NAME': params['name'],
+        'USER': params['user'],
+        'PASSWORD': params['password'],
+        'HOST': params['host'],
+        'PORT': params['port'],
     }
 }
 
