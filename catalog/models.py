@@ -1,8 +1,11 @@
 from django.db import models
 
 
+# Константа для разрешения записи нулевых полей
 NULLABLEL = {'blank': True, 'null': True}
 
+
+# Описание модели Продуктов
 class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name='наименование')
     description = models.TextField(**NULLABLEL, verbose_name='описание')
@@ -15,11 +18,13 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    # Метаданные для обозначения модели
     class Meta:
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
 
 
+# Описание модели Категорий
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='наименование')
     description = models.TextField(**NULLABLEL, verbose_name='описание')
@@ -27,6 +32,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    # Метаданные для обозначения модели
     class Meta:
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
