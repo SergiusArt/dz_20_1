@@ -1,15 +1,15 @@
 from django.db import models
-
+from django.core.validators import MinValueValidator
 
 # Константа для разрешения записи нулевых полей
-NULLABLEL = {'blank': True, 'null': True}
+NULLABLE = {'blank': True, 'null': True}
 
 
 # Описание модели Продуктов
 class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name='наименование')
-    description = models.TextField(**NULLABLEL, verbose_name='описание')
-    image = models.ImageField(upload_to='products', **NULLABLEL, verbose_name='изображение')
+    description = models.TextField(**NULLABLE, verbose_name='описание')
+    image = models.ImageField(upload_to='products', **NULLABLE, verbose_name='изображение')
     category = models.ForeignKey('Category', on_delete=models.CASCADE, verbose_name='категория')
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='цена за покупку')
     date_created = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
@@ -27,7 +27,7 @@ class Product(models.Model):
 # Описание модели Категорий
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='наименование')
-    description = models.TextField(**NULLABLEL, verbose_name='описание')
+    description = models.TextField(**NULLABLE, verbose_name='описание')
 
     def __str__(self):
         return self.name
@@ -37,3 +37,18 @@ class Category(models.Model):
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
 
+
+# Описание модели Версий
+class Version(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name='Продукт')
+    number = models.PositiveIntegerField(validators=[MinValueValidator(1)], verbose_name='Номер версии')
+    name = models.CharField(max_length=100, verbose_name='Имя версии')
+    is_active = models.BooleanField(default=False, verbose_name='Признак текущей версии')
+
+    def __str__(self):
+        return f"{self.product.name} - Версия {self.number}"
+
+    # Метаданные для обозначения модели
+    class Meta:
+        verbose_name = 'Версия'
+        verbose_name_plural = 'Версии'

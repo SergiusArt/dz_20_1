@@ -1,11 +1,20 @@
 {% extends 'catalog/base.html' %}
 
 {% block content %}
+    <!-- Создание продукта -->
+    <div class="text-end">
+        <a href="{% url 'catalog:create_product' %}" class="btn btn-outline-primary mb-2">Создать продукт</a>
+    </div>
 
-<div class="row text-center">
-    {% for object in object_list %}
-        {% include 'catalog/includes/inc_forms.html' %}
-    {% endfor %}
-</div>
+    <!-- Создание категории -->
+    <div class="text-end">
+        <a href="{% url 'catalog:create_category' %}" class="btn btn-outline-primary mb-2">Создать категорию</a>
+    </div>
 
+    <!-- Вывод объектов -->
+    <div class="row text-center">
+        {% for object in object_list %}
+            {% include 'catalog/includes/inc_forms.html' %}
+        {% endfor %}
+    </div>
 {% endblock %}
