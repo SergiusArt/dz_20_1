@@ -11,21 +11,18 @@
                         Создание блога
                     {% endif %}
                 </div>
-            <div class="card-body">
-
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="btn btn-outline-success">
-                    {% if object %}
-                        Сохранить
-                    {% else %}
-                        Добавить
-                    {% endif %}
-                </button>
-            </div>
+                <div class="card-body">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-outline-success">
+                        {% if object %}
+                            Сохранить
+                        {% else %}
+                            Добавить
+                        {% endif %}
+                    </button>
+                </div>
             </div>
         </div>
     </form>
-
-
 {% endblock %}
