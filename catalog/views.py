@@ -1,3 +1,5 @@
+# Импорт необходимых модулей
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, TemplateView
 from catalog.forms import ProductForm, CategoryForm, ProductVersionForm
@@ -7,7 +9,7 @@ from .models import Product, Version, Category
 from django.db.models import Case, When, CharField
 
 
-# Стартовая страница приложения Catalog
+# Класс стартовой страницы приложения Catalog
 class IndexView(TemplateView):
     template_name = 'catalog/start_form.html'
     extra_context = {
@@ -33,7 +35,7 @@ def contacts(request):
     return render(request, 'catalog/contacts.html')
 
 
-# Страница с продуктами по выбранным категориям
+# Класс страницы с продуктами по выбранным категориям
 class ProductListView(ListView):
     model = Product
     template_name = 'product_list.html'
@@ -51,7 +53,8 @@ class ProductListView(ListView):
         ))
 
 
-class ProductCreateView(CreateView):
+# Класс страницы для создания продукта
+class ProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
     form_class = ProductForm
     template_name = 'create_product.html'
@@ -64,6 +67,10 @@ class ProductCreateView(CreateView):
 
     def form_valid(self, form):
         # Проверка валидности формы
+        self.object = form.save(commit=False)
+        if self.request.user.is_authenticated:
+            self.object.owner = self.request.user
+        self.object.save()
         product = form.save(commit=False)
         product.name = form.cleaned_data['name']
         product.save()
@@ -75,6 +82,7 @@ class ProductCreateView(CreateView):
         return redirect(reverse('catalog:product_list', kwargs={'pk': product.pk}))
 
 
+# Класс страницы для редактирования продукта
 class ProductUpdateView(UpdateView):
     model = Product
     form_class = ProductForm
@@ -82,13 +90,15 @@ class ProductUpdateView(UpdateView):
     success_url = reverse_lazy('product_list')
 
 
+# Класс страницы для удаления продукта
 class ProductDeleteView(DeleteView):
     model = Product
     template_name = 'delete_product.html'
     success_url = reverse_lazy('product_list')
 
 
-class CategoryCreateView(CreateView):
+# Класс страницы для создания категории
+class CategoryCreateView(LoginRequiredMixin, CreateView):
     model = Category
     form_class = CategoryForm
     template_name = 'create_category.html'
@@ -99,7 +109,7 @@ class CategoryCreateView(CreateView):
         return redirect(reverse('catalog:product_list', kwargs={'pk': self.object.pk}))
 
 
-# Страница для редактирования продукта
+# Класс страницы для детального просмотра продукта
 class ProductDetailView(TemplateView):
     template_name = 'catalog/product_detail.html'
 

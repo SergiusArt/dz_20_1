@@ -5,11 +5,11 @@
     "fields": {
       "name": "деревянный",
       "description": "полностью деревянный стул",
-      "image": "",
+      "image": "products/деревянныи_стул.png",
       "category": 1,
       "price": "500.00",
       "date_created": "2023-09-12T19:45:36.678Z",
-      "date_modified": "2023-09-12T19:45:36.678Z"
+      "date_modified": "2023-09-14T14:38:37.701Z"
     }
   },
   {
@@ -104,6 +104,461 @@
     }
   },
   {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name": "Игровой стол",
+      "description": "Игровой компьютерный стол, широкий, удобный",
+      "image": "products/игровои_стол.png",
+      "category": 8,
+      "price": "10000.00",
+      "date_created": "2023-09-14T19:31:48.299Z",
+      "date_modified": "2023-09-14T19:31:48.299Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name": "Офисный",
+      "description": "офисный компьютерный стол",
+      "image": "products/офисныи_стол.webp",
+      "category": 8,
+      "price": "7000.00",
+      "date_created": "2023-09-14T19:33:49.590Z",
+      "date_modified": "2023-09-14T19:33:49.590Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name": "mac pro",
+      "description": "мощный компьютер от фирмы apple",
+      "image": "products/мак_проwebp.webp",
+      "category": 9,
+      "price": "400000.00",
+      "date_created": "2023-09-14T19:37:04.285Z",
+      "date_modified": "2023-09-14T19:37:04.285Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "name": "Стационарный набор",
+      "description": "Стационарный набор ПК",
+      "image": "products/стационарныи_набор.png",
+      "category": 9,
+      "price": "100000.00",
+      "date_created": "2023-09-14T19:39:22.872Z",
+      "date_modified": "2023-09-14T19:39:22.873Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 13,
+    "fields": {
+      "name": "Веб-камера для ПК",
+      "description": "хорошая камера для стационарного ПК",
+      "image": "products/вебка_для_ПК.webp",
+      "category": 10,
+      "price": "3000.00",
+      "date_created": "2023-09-14T19:41:49.940Z",
+      "date_modified": "2023-09-14T19:41:49.940Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 14,
+    "fields": {
+      "name": "Эргономик",
+      "description": "Стул с удобной откидной спинкой",
+      "image": "",
+      "category": 1,
+      "price": "25000.00",
+      "date_created": "2023-10-17T10:27:35.640Z",
+      "date_modified": "2023-10-17T10:27:35.640Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 15,
+    "fields": {
+      "name": "Эргономик",
+      "description": "Стул с удобной откидной спинкой",
+      "image": "",
+      "category": 1,
+      "price": "25000.00",
+      "date_created": "2023-10-17T10:29:16.861Z",
+      "date_modified": "2023-10-17T10:29:16.861Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 16,
+    "fields": {
+      "name": "Комнатный",
+      "description": "маленький комнатный стол",
+      "image": "",
+      "category": 2,
+      "price": "5000.00",
+      "date_created": "2023-10-17T10:31:43.782Z",
+      "date_modified": "2023-10-17T10:31:43.782Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 17,
+    "fields": {
+      "name": "Комнатный",
+      "description": "маленький комнатный стол",
+      "image": "",
+      "category": 2,
+      "price": "5000.00",
+      "date_created": "2023-10-17T10:34:13.446Z",
+      "date_modified": "2023-10-17T10:34:13.446Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 18,
+    "fields": {
+      "name": "Комнатный",
+      "description": "маленький комнатный стол",
+      "image": "",
+      "category": 2,
+      "price": "5000.00",
+      "date_created": "2023-10-17T10:34:20.726Z",
+      "date_modified": "2023-10-17T10:34:20.726Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 19,
+    "fields": {
+      "name": "Ультра HD",
+      "description": "Снимает невероятно чётко",
+      "image": "",
+      "category": 10,
+      "price": "15000.00",
+      "date_created": "2023-10-17T11:07:57.663Z",
+      "date_modified": "2023-10-17T11:07:57.663Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 20,
+    "fields": {
+      "name": "Ультра HD",
+      "description": "Снимает невероятно чётко",
+      "image": "",
+      "category": 10,
+      "price": "15000.00",
+      "date_created": "2023-10-17T11:13:16.942Z",
+      "date_modified": "2023-10-17T11:13:16.942Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 21,
+    "fields": {
+      "name": "Мегамойка",
+      "description": "Моет всё, что грязно",
+      "image": "",
+      "category": 4,
+      "price": "30000.00",
+      "date_created": "2023-10-17T11:13:47.584Z",
+      "date_modified": "2023-10-17T11:13:47.584Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 22,
+    "fields": {
+      "name": "Game-Стол",
+      "description": "Идеален для игры в комп",
+      "image": "",
+      "category": 8,
+      "price": "23000.00",
+      "date_created": "2023-10-17T11:16:21.100Z",
+      "date_modified": "2023-10-17T11:16:21.100Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 23,
+    "fields": {
+      "name": "Маус Мэджик 3",
+      "description": "мышь для эпл техники",
+      "image": "",
+      "category": 11,
+      "price": "20000.00",
+      "date_created": "2023-10-17T11:33:22.284Z",
+      "date_modified": "2023-10-17T11:33:22.284Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 24,
+    "fields": {
+      "name": "Барный",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T15:57:57.855Z",
+      "date_modified": "2023-10-18T15:57:57.855Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 25,
+    "fields": {
+      "name": "стандартная",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T16:00:12.904Z",
+      "date_modified": "2023-10-18T16:00:12.904Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 26,
+    "fields": {
+      "name": "стандартная",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T16:00:19.646Z",
+      "date_modified": "2023-10-18T16:00:19.646Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 27,
+    "fields": {
+      "name": "стандартная",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T16:31:53.935Z",
+      "date_modified": "2023-10-18T16:31:53.935Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 28,
+    "fields": {
+      "name": "стандартная",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T16:33:09.520Z",
+      "date_modified": "2023-10-18T16:33:09.520Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 29,
+    "fields": {
+      "name": "стандартная",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T16:33:30.112Z",
+      "date_modified": "2023-10-18T16:33:30.112Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 30,
+    "fields": {
+      "name": "стандартная",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T16:43:13.235Z",
+      "date_modified": "2023-10-18T16:43:13.235Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 31,
+    "fields": {
+      "name": "стандартная",
+      "description": "барный стул с крутящейся подставкой",
+      "image": "",
+      "category": 1,
+      "price": "7000.00",
+      "date_created": "2023-10-18T16:45:40.018Z",
+      "date_modified": "2023-10-18T16:45:40.018Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 32,
+    "fields": {
+      "name": "экспортный",
+      "description": "холодит очень сильно",
+      "image": "",
+      "category": 3,
+      "price": "65000.00",
+      "date_created": "2023-10-18T16:50:10.065Z",
+      "date_modified": "2023-10-18T16:50:10.065Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 33,
+    "fields": {
+      "name": "праймери",
+      "description": "оч крутая вебка 100%",
+      "image": "",
+      "category": 10,
+      "price": "7600.00",
+      "date_created": "2023-10-18T17:42:42.282Z",
+      "date_modified": "2023-10-18T17:42:42.282Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 34,
+    "fields": {
+      "name": "мини",
+      "description": "очень маленький стол",
+      "image": "",
+      "category": 2,
+      "price": "1000.00",
+      "date_created": "2023-10-18T18:04:32.708Z",
+      "date_modified": "2023-10-18T18:04:32.708Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 35,
+    "fields": {
+      "name": "первый",
+      "description": "игровой комп мощь",
+      "image": "",
+      "category": 9,
+      "price": "100000.00",
+      "date_created": "2023-10-18T18:08:25.385Z",
+      "date_modified": "2023-10-18T18:08:25.385Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 36,
+    "fields": {
+      "name": "обыкновенная",
+      "description": "обычная мышь",
+      "image": "",
+      "category": 11,
+      "price": "500.00",
+      "date_created": "2023-10-18T19:46:01.523Z",
+      "date_modified": "2023-10-18T19:46:01.524Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 37,
+    "fields": {
+      "name": "обыкновенная",
+      "description": "обычная мышь",
+      "image": "",
+      "category": 11,
+      "price": "500.00",
+      "date_created": "2023-10-18T19:46:01.538Z",
+      "date_modified": "2023-10-18T19:46:01.538Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 38,
+    "fields": {
+      "name": "никакая",
+      "description": "посуда мойка",
+      "image": "",
+      "category": 4,
+      "price": "13000.00",
+      "date_created": "2023-10-18T19:47:03.685Z",
+      "date_modified": "2023-10-18T19:47:03.685Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 39,
+    "fields": {
+      "name": "никакая",
+      "description": "посуда мойка",
+      "image": "",
+      "category": 4,
+      "price": "13000.00",
+      "date_created": "2023-10-18T19:47:03.694Z",
+      "date_modified": "2023-10-18T19:47:03.694Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 40,
+    "fields": {
+      "name": "версионный",
+      "description": "то что надо",
+      "image": "",
+      "category": 1,
+      "price": "10.00",
+      "date_created": "2023-10-18T19:52:10.896Z",
+      "date_modified": "2023-10-18T19:52:10.896Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 41,
+    "fields": {
+      "name": "мик",
+      "description": "черная мышь",
+      "image": "",
+      "category": 11,
+      "price": "2000.00",
+      "date_created": "2023-10-18T20:04:43.593Z",
+      "date_modified": "2023-10-18T20:04:43.593Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 42,
+    "fields": {
+      "name": "стайлиш",
+      "description": "модный комп",
+      "image": "",
+      "category": 9,
+      "price": "90000.00",
+      "date_created": "2023-10-18T20:18:45.649Z",
+      "date_modified": "2023-10-18T20:18:45.649Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 43,
+    "fields": {
+      "name": "МойНеСам",
+      "description": "очень хорошая машинка",
+      "image": "",
+      "category": 4,
+      "price": "23400.00",
+      "date_created": "2023-10-18T20:44:35.048Z",
+      "date_modified": "2023-10-18T20:44:35.048Z"
+    }
+  },
+  {
     "model": "catalog.category",
     "pk": 1,
     "fields": {
@@ -133,6 +588,309 @@
     "fields": {
       "name": "посудомойка",
       "description": "заменяет ручную мойку грязной посуды"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 8,
+    "fields": {
+      "name": "компьютерный стол",
+      "description": "широкий удобный стол"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 9,
+    "fields": {
+      "name": "компьютер",
+      "description": "стационарный компьютер"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 10,
+    "fields": {
+      "name": "веб-камера",
+      "description": "для компьютеров веб-камера"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 11,
+    "fields": {
+      "name": "Компьютерная мышь",
+      "description": "мыши для работы с компьютером"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 24,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 25,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product": 26,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 27,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 5,
+    "fields": {
+      "product": 28,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 6,
+    "fields": {
+      "product": 29,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 7,
+    "fields": {
+      "product": 30,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 8,
+    "fields": {
+      "product": 31,
+      "number": 1,
+      "name": "стандартная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 9,
+    "fields": {
+      "product": 32,
+      "number": 1,
+      "name": "экспортный",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 10,
+    "fields": {
+      "product": 33,
+      "number": 1,
+      "name": "праймери",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 11,
+    "fields": {
+      "product": 34,
+      "number": 1,
+      "name": "мини",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 12,
+    "fields": {
+      "product": 35,
+      "number": 1,
+      "name": "первый",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 13,
+    "fields": {
+      "product": 36,
+      "number": 1,
+      "name": "обыкновенная",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 14,
+    "fields": {
+      "product": 38,
+      "number": 1,
+      "name": "никакая",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 15,
+    "fields": {
+      "product": 40,
+      "number": 1,
+      "name": "версионный",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 16,
+    "fields": {
+      "product": 41,
+      "number": 1,
+      "name": "мик",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 17,
+    "fields": {
+      "product": 42,
+      "number": 1,
+      "name": "стайлиш",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 18,
+    "fields": {
+      "product": 43,
+      "number": 1,
+      "name": "мойка",
+      "is_active": true
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+      "name": "Тестовый",
+      "slug": "testovij",
+      "content": "тестовое содержимое",
+      "preview": "blog/media/blog/blog/тест_блог_HUracsS.png",
+      "date_create": "2023-09-23T13:49:36Z",
+      "published": true,
+      "count_views": 9
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+      "name": "тест4",
+      "slug": "test4",
+      "content": "ещё одно тестовое сообщение",
+      "preview": "blog/media/blog/blog/тест2_lPB3NQz.png",
+      "date_create": null,
+      "published": true,
+      "count_views": 3
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 5,
+    "fields": {
+      "name": "Тестовый5",
+      "slug": "testovij5",
+      "content": "Очередной тестовый блог номер пять",
+      "preview": "blog/media/blog/blog/тест2.png",
+      "date_create": null,
+      "published": false,
+      "count_views": 3
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 6,
+    "fields": {
+      "name": "Тестовый6",
+      "slug": "6",
+      "content": "Тестовое содержимое шесть",
+      "preview": "blog/media/blog/blog/тест6.jpeg",
+      "date_create": null,
+      "published": false,
+      "count_views": 1
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 7,
+    "fields": {
+      "name": "Tests blog num 7",
+      "slug": "tests-blog-num-7",
+      "content": "тестовый блог",
+      "preview": "",
+      "date_create": null,
+      "published": true,
+      "count_views": 1
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 8,
+    "fields": {
+      "name": "тестовый блог номер 7",
+      "slug": "testovyi-blog-nomer-7",
+      "content": "Новое содержимое блога",
+      "preview": "",
+      "date_create": null,
+      "published": true,
+      "count_views": 13
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 9,
+    "fields": {
+      "name": "тестовый блочара номер восемь",
+      "slug": "testovyi-blochara-nomer-vosem",
+      "content": "тупо текст",
+      "preview": "",
+      "date_create": "2023-09-24T18:25:01.829Z",
+      "published": true,
+      "count_views": 2
     }
   }
 ]
